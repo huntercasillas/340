@@ -13,9 +13,9 @@ public abstract class Subject {
     observers.remove(obs);
   }
 
-  public void notifyObservers(Flight flight) {
+  public void notifyObservers(Object obj) {
     for (Observer obs: observers) {
-      obs.update(flight);
+      obs.update(obj);
     }
   }
 }

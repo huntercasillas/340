@@ -10,8 +10,9 @@ public class FlightDeltaObs implements Observer {
 		}
 	}
 
-	public void update(Flight flight) {
-		if (prevFlight != null && flight != null) {
+	public void update(Object object) {
+		if (object.getClass().equals(Flight.class) && prevFlight != null && object != null) {
+			Flight flight = (Flight) object;
 			float deltaLon = java.lang.Math.abs(prevFlight.longitude - flight.longitude);
 			float deltaLat = java.lang.Math.abs(prevFlight.latitude - flight.latitude);
 			float deltaVel = java.lang.Math.abs(prevFlight.velocity - flight.velocity);
