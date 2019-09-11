@@ -1,4 +1,4 @@
-import java.lang.Math.*;
+import java.lang.*;
 
 public class FlightDeltaObs implements Observer {
 
@@ -21,6 +21,9 @@ public class FlightDeltaObs implements Observer {
 			System.out.println("Flight Changes - " + output + "\n");
 			prevFlight = flight;
 		}
-		setPrevFlight(flight);
+		if (object.getClass().equals(Flight.class)) {
+			Flight flight = (Flight) object;
+			setPrevFlight(flight);
+		}
 	}
 }
