@@ -1,8 +1,8 @@
 //
 //  LoginViewController.swift
-//  FamilyMap
+//  Carbon
 //
-//  Created by Hunter Casillas on 3/10/19.
+//  Created by Hunter Casillas on 9/16/19.
 //  Copyright © 2019 Hunter Casillas. All rights reserved.
 //
 
